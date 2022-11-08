@@ -247,6 +247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 524f0a5418464ff4eb2585c8ff2d7ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileSpeed: 50
+  projectilePrefab: {fileID: 7988140060815000551, guid: c21139e7a02b36b4e8df73cbdcba17f7, type: 3}
   walkingSpeed: 4.5
   runningSpeed: 12
   jumpSpeed: 8

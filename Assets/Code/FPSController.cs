@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class FPSController : MonoBehaviour
 {
+    [SerializeField] private float projectileSpeed;
+    [SerializeField] private Projectile projectilePrefab;
 
     public float walkingSpeed = 5.5f;
     public float runningSpeed = 11.5f;
@@ -33,6 +35,16 @@ public class FPSController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            var position = transform.position + transform.forward;
+            var rotation = transform.rotation;
+            var projectile = Instantiate(projectilePrefab, playerCamera.transform.position, rotation);
+            projectile.Fire(projectileSpeed, playerCamera.transform.forward);
+        }
+
+
+
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward).normalized;
         Vector3 right = transform.TransformDirection(Vector3.right).normalized;
