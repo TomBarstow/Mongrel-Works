@@ -46,9 +46,9 @@ public class FPSController : MonoBehaviour
 
 
         // We are grounded, so recalculate move direction based on axes
-        Vector3 forward = transform.TransformDirection(Vector3.forward).normalized;
-        Vector3 right = transform.TransformDirection(Vector3.right).normalized;
-        // Press Left Shift to run
+        Vector3 forward = transform.TransformDirection(Vector3.forward);
+        Vector3 right = transform.TransformDirection(Vector3.right);
+        // Press & hold LShift to walk
         bool isWalking = Input.GetKey(KeyCode.LeftShift);
         float curSpeedX = canMove ? (isWalking ? walkingSpeed : runningSpeed) * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? (isWalking ? walkingSpeed : runningSpeed) * Input.GetAxis("Horizontal") : 0;
