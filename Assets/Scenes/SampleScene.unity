@@ -217,57 +217,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &712570436
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 712570438}
-  - component: {fileID: 712570437}
-  m_Layer: 0
-  m_Name: TestMapGenCA
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &712570437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712570436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d142c0ed78bb9148a773dcc9327e6eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thing:
-  - {fileID: 8078713331298319551, guid: a171a79b103a88f449a6801129a18472, type: 3}
-  xMax: 50
-  yMax: 50
-  zMax: 50
-  gridSpacing: 1
-  gridOrigin: {x: 0, y: -20, z: 0}
---- !u!4 &712570438
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712570436}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &846009194
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,18 +489,13 @@ MonoBehaviour:
   tiles:
   - {fileID: 6410447849188718527, guid: 69c416b2c2d446842a028c26057c1d02, type: 3}
   - {fileID: 2916601653471392673, guid: 199ea8d27baad54458e0f5f5c9c27618, type: 3}
-  - {fileID: 4691678446111479090, guid: a0fd92b8c515aa6469a063ee01ed4097, type: 3}
   - {fileID: 8336871726139483089, guid: ac5d312eb609ab845970be9073648b2b, type: 3}
-  - {fileID: 4416861521101969589, guid: b5b1219245d66404e940b35ad877ea2d, type: 3}
-  - {fileID: 2689576945019724959, guid: 8ceb82e0fb0e5d943b37ebf0dc14f033, type: 3}
-  - {fileID: 1294080454848800721, guid: a97bca14373ab8642a50781126ac541a, type: 3}
-  - {fileID: 250277691393439911, guid: 921a8eb1c4087944fb90f701f75eb79f, type: 3}
-  - {fileID: 1141613114619370717, guid: 78a8e7c7e5b541745b6e3d135782b7ef, type: 3}
-  mapWidth: 50
-  mapHeight: 50
-  spawnSquareArea: 7
+  gridx: 64
+  gridz: 64
+  spawnArea: 6
   gridSpacing: 10
-  gridOrigin: {x: 0, y: 0, z: 0}
+  shift: {x: 237, y: 0, z: 90}
+  zoom: 0.1
 --- !u!4 &1552901905
 Transform:
   m_ObjectHideFlags: 0
