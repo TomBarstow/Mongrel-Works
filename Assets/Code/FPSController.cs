@@ -35,6 +35,7 @@ public class FPSController : MonoBehaviour
 
     void Update()
     {
+        //Shoot bullets out of players face
         if (Input.GetMouseButtonDown(0))
         {
             var position = transform.position + transform.forward;

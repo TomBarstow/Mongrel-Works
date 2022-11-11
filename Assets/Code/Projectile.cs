@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
 
     private Rigidbody _rb;
+    public GameObject explosionPrefab;
 
     private void Awake()
     {
@@ -17,4 +18,14 @@ public class Projectile : MonoBehaviour
         _rb.velocity = direction * speed;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Explode();
+    }
+
+    private void Explode()
+    {
+        var explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
 }
